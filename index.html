@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A personal collection of memories, photographs and videos.">
+    <meta name="theme-color" content="#0b0b12">
+
+    <title>My Memories — Personal Collection</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">M</span>
+            <span>My Memories</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#photos" class="nav-link">Photos</a>
+            <a href="#videos" class="nav-link">Videos</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#photos">Photos</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+    </div>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    A PERSONAL COLLECTION
+                </p>
+
+                <h1>
+                    Moments that
+                    <span>stay forever.</span>
+                </h1>
+
+                <p class="hero-description">
+                    A private little corner of the internet where
+                    photographs, videos and beautiful memories
+                    live together.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#photos" class="primary-btn">
+                        Explore Memories
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#videos" class="secondary-btn">
+                        Watch Videos
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-frame">
+
+                    <img
+                        src="photos/cover.jpg"
+                        alt="Memory cover"
+                        onerror="this.src='https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?auto=format&fit=crop&w=1200&q=85'"
+                    >
+
+                    <div class="frame-overlay"></div>
+
+                    <div class="frame-caption">
+                        <span>MEMORY</span>
+                        <strong>01</strong>
+                    </div>
+
+                </div>
+
+                <div class="floating-card">
+                    <span class="small-heart">♡</span>
+                    <div>
+                        <strong>Beautiful moments</strong>
+                        <small>Worth remembering</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+        <section class="intro-section">
+
+            <div class="section-number">01</div>
+
+            <div class="intro-content">
+
+                <p class="eyebrow">THE COLLECTION</p>
+
+                <h2>
+                    Every picture has
+                    <em>a story.</em>
+                </h2>
+
+                <p>
+                    Some memories deserve more than a place
+                    in a phone gallery. This is a collection of
+                    moments that are worth coming back to.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTOS -->
+        <section class="section photos-section" id="photos">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">02 / PHOTOGRAPHS</p>
+
+                    <h2>
+                        Photo <em>Memories</em>
+                    </h2>
+                </div>
+
+                <p class="section-note">
+                    A collection of captured moments.
+                </p>
+
+            </div>
+
+
+            <div class="photo-grid">
+
+                <article class="photo-card photo-large">
+                    <img
+                        src="photos/photo1.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 01</span>
+                        <button class="view-btn" data-image="photos/photo1.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="photo-card">
+                    <img
+                        src="photos/photo2.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 02</span>
+                        <button class="view-btn" data-image="photos/photo2.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="photo-card">
+                    <img
+                        src="photos/photo3.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 03</span>
+                        <button class="view-btn" data-image="photos/photo3.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="photo-card photo-wide">
+                    <img
+                        src="photos/photo4.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 04</span>
+                        <button class="view-btn" data-image="photos/photo4.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="photo-card">
+                    <img
+                        src="photos/photo5.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 05</span>
+                        <button class="view-btn" data-image="photos/photo5.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="photo-card">
+                    <img
+                        src="photos/photo6.jpg"
+                        alt="Memory photograph"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&q=85'"
+                    >
+
+                    <div class="photo-overlay">
+                        <span>MEMORY 06</span>
+                        <button class="view-btn" data-image="photos/photo6.jpg">
+                            View
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED MEMORY -->
+        <section class="featured-section">
+
+            <div class="featured-image">
+
+                <img
+                    src="photos/featured.jpg"
+                    alt="Featured memory"
+                    loading="lazy"
+                    onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=90'"
+                >
+
+            </div>
+
+            <div class="featured-content">
+
+                <p class="eyebrow">A FAVORITE MEMORY</p>
+
+                <h2>
+                    Keep the moments
+                    <em>close.</em>
+                </h2>
+
+                <p>
+                    Time moves quickly. Photographs give us
+                    a way to pause for a moment and remember
+                    how things felt.
+                </p>
+
+                <div class="featured-line"></div>
+
+                <span class="featured-number">MEMORY / 07</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEOS -->
+        <section class="section videos-section" id="videos">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">03 / VIDEOGRAPHY</p>
+
+                    <h2>
+                        Moving <em>Memories</em>
+                    </h2>
+                </div>
+
+                <p class="section-note">
+                    Moments captured in motion.
+                </p>
+
+            </div>
+
+
+            <div class="video-grid">
+
+                <article class="video-card">
+
+                    <video
+                        src="videos/video1.mp4"
+                        poster="photos/video-cover1.jpg"
+                        preload="metadata"
+                    ></video>
+
+                    <button class="video-play" aria-label="Play video">
+                        ▶
+                    </button>
+
+                    <div class="video-info">
+                        <span>VIDEO 01</span>
+                        <strong>A Moment to Remember</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="video-card">
+
+                    <video
+                        src="videos/video2.mp4"
+                        poster="photos/video-cover2.jpg"
+                        preload="metadata"
+                    ></video>
+
+                    <button class="video-play" aria-label="Play video">
+                        ▶
+                    </button>
+
+                    <div class="video-info">
+                        <span>VIDEO 02</span>
+                        <strong>Little Moments</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="video-card">
+
+                    <video
+                        src="videos/video3.mp4"
+                        poster="photos/video-cover3.jpg"
+                        preload="metadata"
+                    ></video>
+
+                    <button class="video-play" aria-label="Play video">
+                        ▶
+                    </button>
+
+                    <div class="video-info">
+                        <span>VIDEO 03</span>
+                        <strong>Beautiful Days</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUOTE -->
+        <section class="quote-section">
+
+            <div class="quote-mark">“</div>
+
+            <blockquote>
+                The best things in life
+                are not things.
+                They are moments.
+            </blockquote>
+
+            <span>— MEMORY COLLECTION</span>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="section-number">04</div>
+
+            <div class="about-grid">
+
+                <div>
+
+                    <p class="eyebrow">ABOUT THIS SPACE</p>
+
+                    <h2>
+                        A place for
+                        <em>memories.</em>
+                    </h2>
+
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+                        This website is a personal digital
+                        memory album. It is made to keep
+                        photographs and videos together in
+                        one beautiful place.
+                    </p>
+
+                    <p>
+                        Every memory here means something.
+                        Some are big moments, some are tiny
+                        moments — but all of them are worth
+                        remembering.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                My Memories<span>♡</span>
+            </div>
+
+            <p>
+                Made with memories & love.
+            </p>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>© 2026 My Memories</span>
+
+            <a href="#home">Back to top ↑</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close" id="lightboxClose">
+            ×
+        </button>
+
+        <img id="lightboxImage" src="" alt="Full size memory">
+
+    </div>
+
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal">
+
+        <button class="video-modal-close" id="videoModalClose">
+            ×
+        </button>
+
+        <video id="modalVideo" controls></video>
+
+    </div>
+
+
+    <!-- MUSIC BUTTON -->
+    <button class="music-button" id="musicBtn" aria-label="Toggle music">
+        <span class="music-icon">♫</span>
+    </button>
+
+    <audio id="backgroundMusic" loop preload="none">
+        <source src="music/memory.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
