@@ -1,531 +1,599 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="A personal collection of memories, photographs and videos.">
-    <meta name="theme-color" content="#0b0b12">
-
-    <title>My Memories — Personal Collection</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Background -->
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
-    <div class="noise"></div>
-
-    <!-- Navigation -->
-    <header class="navbar">
-
-        <a href="#home" class="logo">
-            <span class="logo-mark">M</span>
-            <span>My Memories</span>
-        </a>
-
-        <nav class="nav-links">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#photos" class="nav-link">Photos</a>
-            <a href="#videos" class="nav-link">Videos</a>
-            <a href="#about" class="nav-link">About</a>
-        </nav>
-
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-            <span></span>
-            <span></span>
-        </button>
-
-    </header>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#home">Home</a>
-        <a href="#photos">Photos</a>
-        <a href="#videos">Videos</a>
-        <a href="#about">About</a>
-    </div>
-
-
-    <!-- HERO -->
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    A PERSONAL COLLECTION
-                </p>
-
-                <h1>
-                    Moments that
-                    <span>stay forever.</span>
-                </h1>
-
-                <p class="hero-description">
-                    A private little corner of the internet where
-                    photographs, videos and beautiful memories
-                    live together.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#photos" class="primary-btn">
-                        Explore Memories
-                        <span>↗</span>
-                    </a>
-
-                    <a href="#videos" class="secondary-btn">
-                        Watch Videos
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-visual">
-
-                <div class="hero-frame">
-
-                    <img
-                        src="photos/cover.jpg"
-                        alt="Memory cover"
-                        onerror="this.src='https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?auto=format&fit=crop&w=1200&q=85'"
-                    >
-
-                    <div class="frame-overlay"></div>
-
-                    <div class="frame-caption">
-                        <span>MEMORY</span>
-                        <strong>01</strong>
-                    </div>
-
-                </div>
-
-                <div class="floating-card">
-                    <span class="small-heart">♡</span>
-                    <div>
-                        <strong>Beautiful moments</strong>
-                        <small>Worth remembering</small>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="scroll-indicator">
-                <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
-            </div>
-
-        </section>
-
-
-        <!-- INTRO -->
-        <section class="intro-section">
-
-            <div class="section-number">01</div>
-
-            <div class="intro-content">
-
-                <p class="eyebrow">THE COLLECTION</p>
-
-                <h2>
-                    Every picture has
-                    <em>a story.</em>
-                </h2>
-
-                <p>
-                    Some memories deserve more than a place
-                    in a phone gallery. This is a collection of
-                    moments that are worth coming back to.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- PHOTOS -->
-        <section class="section photos-section" id="photos">
-
-            <div class="section-heading">
-
-                <div>
-                    <p class="eyebrow">02 / PHOTOGRAPHS</p>
-
-                    <h2>
-                        Photo <em>Memories</em>
-                    </h2>
-                </div>
-
-                <p class="section-note">
-                    A collection of captured moments.
-                </p>
-
-            </div>
-
-
-            <div class="photo-grid">
-
-                <article class="photo-card photo-large">
-                    <img
-                        src="photos/photo1.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 01</span>
-                        <button class="view-btn" data-image="photos/photo1.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="photo-card">
-                    <img
-                        src="photos/photo2.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 02</span>
-                        <button class="view-btn" data-image="photos/photo2.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="photo-card">
-                    <img
-                        src="photos/photo3.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 03</span>
-                        <button class="view-btn" data-image="photos/photo3.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="photo-card photo-wide">
-                    <img
-                        src="photos/photo4.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 04</span>
-                        <button class="view-btn" data-image="photos/photo4.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="photo-card">
-                    <img
-                        src="photos/photo5.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 05</span>
-                        <button class="view-btn" data-image="photos/photo5.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-
-                <article class="photo-card">
-                    <img
-                        src="photos/photo6.jpg"
-                        alt="Memory photograph"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&q=85'"
-                    >
-
-                    <div class="photo-overlay">
-                        <span>MEMORY 06</span>
-                        <button class="view-btn" data-image="photos/photo6.jpg">
-                            View
-                        </button>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- FEATURED MEMORY -->
-        <section class="featured-section">
-
-            <div class="featured-image">
-
-                <img
-                    src="photos/featured.jpg"
-                    alt="Featured memory"
-                    loading="lazy"
-                    onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=90'"
-                >
-
-            </div>
-
-            <div class="featured-content">
-
-                <p class="eyebrow">A FAVORITE MEMORY</p>
-
-                <h2>
-                    Keep the moments
-                    <em>close.</em>
-                </h2>
-
-                <p>
-                    Time moves quickly. Photographs give us
-                    a way to pause for a moment and remember
-                    how things felt.
-                </p>
-
-                <div class="featured-line"></div>
-
-                <span class="featured-number">MEMORY / 07</span>
-
-            </div>
-
-        </section>
-
-
-        <!-- VIDEOS -->
-        <section class="section videos-section" id="videos">
-
-            <div class="section-heading">
-
-                <div>
-                    <p class="eyebrow">03 / VIDEOGRAPHY</p>
-
-                    <h2>
-                        Moving <em>Memories</em>
-                    </h2>
-                </div>
-
-                <p class="section-note">
-                    Moments captured in motion.
-                </p>
-
-            </div>
-
-
-            <div class="video-grid">
-
-                <article class="video-card">
-
-                    <video
-                        src="videos/video1.mp4"
-                        poster="photos/video-cover1.jpg"
-                        preload="metadata"
-                    ></video>
-
-                    <button class="video-play" aria-label="Play video">
-                        ▶
-                    </button>
-
-                    <div class="video-info">
-                        <span>VIDEO 01</span>
-                        <strong>A Moment to Remember</strong>
-                    </div>
-
-                </article>
-
-
-                <article class="video-card">
-
-                    <video
-                        src="videos/video2.mp4"
-                        poster="photos/video-cover2.jpg"
-                        preload="metadata"
-                    ></video>
-
-                    <button class="video-play" aria-label="Play video">
-                        ▶
-                    </button>
-
-                    <div class="video-info">
-                        <span>VIDEO 02</span>
-                        <strong>Little Moments</strong>
-                    </div>
-
-                </article>
-
-
-                <article class="video-card">
-
-                    <video
-                        src="videos/video3.mp4"
-                        poster="photos/video-cover3.jpg"
-                        preload="metadata"
-                    ></video>
-
-                    <button class="video-play" aria-label="Play video">
-                        ▶
-                    </button>
-
-                    <div class="video-info">
-                        <span>VIDEO 03</span>
-                        <strong>Beautiful Days</strong>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- QUOTE -->
-        <section class="quote-section">
-
-            <div class="quote-mark">“</div>
-
-            <blockquote>
-                The best things in life
-                are not things.
-                They are moments.
-            </blockquote>
-
-            <span>— MEMORY COLLECTION</span>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about-section" id="about">
-
-            <div class="section-number">04</div>
-
-            <div class="about-grid">
-
-                <div>
-
-                    <p class="eyebrow">ABOUT THIS SPACE</p>
-
-                    <h2>
-                        A place for
-                        <em>memories.</em>
-                    </h2>
-
-                </div>
-
-                <div class="about-text">
-
-                    <p>
-                        This website is a personal digital
-                        memory album. It is made to keep
-                        photographs and videos together in
-                        one beautiful place.
-                    </p>
-
-                    <p>
-                        Every memory here means something.
-                        Some are big moments, some are tiny
-                        moments — but all of them are worth
-                        remembering.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-top">
-
-            <div class="footer-logo">
-                My Memories<span>♡</span>
-            </div>
-
-            <p>
-                Made with memories & love.
-            </p>
-
+<div class="photo-grid">
+
+    <article class="photo-card photo-large">
+        <img src="photos/photo1 (1).jpg"
+             alt="Memory photograph 1"
+             loading="lazy">
+
+        <div class="photo-overlay">
+            <span>MEMORY 01</span>
+            <button class="view-btn" data-image="photos/photo1 (1).jpg">
+                View
+            </button>
         </div>
+    </article>
 
-        <div class="footer-bottom">
 
-            <span>© 2026 My Memories</span>
+    <article class="photo-card">
+        <img src="photos/photo1 (2).jpg"
+             alt="Memory photograph 2"
+             loading="lazy">
 
-            <a href="#home">Back to top ↑</a>
-
+        <div class="photo-overlay">
+            <span>MEMORY 02</span>
+            <button class="view-btn" data-image="photos/photo1 (2).jpg">
+                View
+            </button>
         </div>
-
-    </footer>
-
-
-    <!-- IMAGE LIGHTBOX -->
-    <div class="lightbox" id="lightbox">
-
-        <button class="lightbox-close" id="lightboxClose">
-            ×
-        </button>
-
-        <img id="lightboxImage" src="" alt="Full size memory">
-
-    </div>
+    </article>
 
 
-    <!-- VIDEO MODAL -->
-    <div class="video-modal" id="videoModal">
+    <article class="photo-card">
+        <img src="photos/photo1 (3).jpg"
+             alt="Memory photograph 3"
+             loading="lazy">
 
-        <button class="video-modal-close" id="videoModalClose">
-            ×
-        </button>
-
-        <video id="modalVideo" controls></video>
-
-    </div>
-
-
-    <!-- MUSIC BUTTON -->
-    <button class="music-button" id="musicBtn" aria-label="Toggle music">
-        <span class="music-icon">♫</span>
-    </button>
-
-    <audio id="backgroundMusic" loop preload="none">
-        <source src="music/memory.mp3" type="audio/mpeg">
-    </audio>
+        <div class="photo-overlay">
+            <span>MEMORY 03</span>
+            <button class="view-btn" data-image="photos/photo1 (3).jpg">
+                View
+            </button>
+        </div>
+    </article>
 
 
-    <script src="script.js"></script>
+    <article class="photo-card photo-wide">
+        <img src="photos/photo1 (4).jpg"
+             alt="Memory photograph 4"
+             loading="lazy">
 
-</body>
-</html>
+        <div class="photo-overlay">
+            <span>MEMORY 04</span>
+            <button class="view-btn" data-image="photos/photo1 (4).jpg">
+                View
+            </button>
+        </div>
+    </article>
+
+
+    <article class="photo-card">
+        <img src="photos/photo1 (5).jpg"
+             alt="Memory photograph 5"
+             loading="lazy">
+
+        <div class="photo-overlay">
+            <span>MEMORY 05</span>
+            <button class="view-btn" data-image="photos/photo1 (5).jpg">
+                View
+            </button>
+        </div>
+    </article>
+
+
+    <article class="photo-card">
+        <img src="photos/photo1 (6).jpg"
+             alt="Memory photograph 6"
+             loading="lazy">
+
+        <div class="photo-overlay">
+            <span>MEMORY 06</span>
+            <button class="view-btn" data-image="photos/photo1 (6).jpg">
+                View
+            </button>
+        </div>
+    </article>
+
+
+    <article class="photo-card">
+        <img src="photos/photo1 (7).jpg" alt="Memory photograph 7" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 07</span>
+            <button class="view-btn" data-image="photos/photo1 (7).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (8).jpg" alt="Memory photograph 8" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 08</span>
+            <button class="view-btn" data-image="photos/photo1 (8).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (9).jpg" alt="Memory photograph 9" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 09</span>
+            <button class="view-btn" data-image="photos/photo1 (9).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (10).jpg" alt="Memory photograph 10" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 10</span>
+            <button class="view-btn" data-image="photos/photo1 (10).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (11).jpg" alt="Memory photograph 11" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 11</span>
+            <button class="view-btn" data-image="photos/photo1 (11).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (12).jpg" alt="Memory photograph 12" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 12</span>
+            <button class="view-btn" data-image="photos/photo1 (12).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (13).jpg" alt="Memory photograph 13" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 13</span>
+            <button class="view-btn" data-image="photos/photo1 (13).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (14).jpg" alt="Memory photograph 14" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 14</span>
+            <button class="view-btn" data-image="photos/photo1 (14).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (15).jpg" alt="Memory photograph 15" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 15</span>
+            <button class="view-btn" data-image="photos/photo1 (15).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (16).jpg" alt="Memory photograph 16" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 16</span>
+            <button class="view-btn" data-image="photos/photo1 (16).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (17).jpg" alt="Memory photograph 17" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 17</span>
+            <button class="view-btn" data-image="photos/photo1 (17).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (18).jpg" alt="Memory photograph 18" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 18</span>
+            <button class="view-btn" data-image="photos/photo1 (18).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (19).jpg" alt="Memory photograph 19" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 19</span>
+            <button class="view-btn" data-image="photos/photo1 (19).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (20).jpg" alt="Memory photograph 20" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 20</span>
+            <button class="view-btn" data-image="photos/photo1 (20).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (21).jpg" alt="Memory photograph 21" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 21</span>
+            <button class="view-btn" data-image="photos/photo1 (21).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (22).jpg" alt="Memory photograph 22" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 22</span>
+            <button class="view-btn" data-image="photos/photo1 (22).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (23).jpg" alt="Memory photograph 23" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 23</span>
+            <button class="view-btn" data-image="photos/photo1 (23).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (24).jpg" alt="Memory photograph 24" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 24</span>
+            <button class="view-btn" data-image="photos/photo1 (24).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (25).jpg" alt="Memory photograph 25" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 25</span>
+            <button class="view-btn" data-image="photos/photo1 (25).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (26).jpg" alt="Memory photograph 26" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 26</span>
+            <button class="view-btn" data-image="photos/photo1 (26).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (27).jpg" alt="Memory photograph 27" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 27</span>
+            <button class="view-btn" data-image="photos/photo1 (27).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (28).jpg" alt="Memory photograph 28" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 28</span>
+            <button class="view-btn" data-image="photos/photo1 (28).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (29).jpg" alt="Memory photograph 29" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 29</span>
+            <button class="view-btn" data-image="photos/photo1 (29).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (30).jpg" alt="Memory photograph 30" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 30</span>
+            <button class="view-btn" data-image="photos/photo1 (30).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (31).jpg" alt="Memory photograph 31" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 31</span>
+            <button class="view-btn" data-image="photos/photo1 (31).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (32).jpg" alt="Memory photograph 32" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 32</span>
+            <button class="view-btn" data-image="photos/photo1 (32).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (33).jpg" alt="Memory photograph 33" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 33</span>
+            <button class="view-btn" data-image="photos/photo1 (33).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (34).jpg" alt="Memory photograph 34" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 34</span>
+            <button class="view-btn" data-image="photos/photo1 (34).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (35).jpg" alt="Memory photograph 35" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 35</span>
+            <button class="view-btn" data-image="photos/photo1 (35).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (36).jpg" alt="Memory photograph 36" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 36</span>
+            <button class="view-btn" data-image="photos/photo1 (36).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (37).jpg" alt="Memory photograph 37" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 37</span>
+            <button class="view-btn" data-image="photos/photo1 (37).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (38).jpg" alt="Memory photograph 38" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 38</span>
+            <button class="view-btn" data-image="photos/photo1 (38).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (39).jpg" alt="Memory photograph 39" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 39</span>
+            <button class="view-btn" data-image="photos/photo1 (39).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (40).jpg" alt="Memory photograph 40" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 40</span>
+            <button class="view-btn" data-image="photos/photo1 (40).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (41).jpg" alt="Memory photograph 41" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 41</span>
+            <button class="view-btn" data-image="photos/photo1 (41).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (42).jpg" alt="Memory photograph 42" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 42</span>
+            <button class="view-btn" data-image="photos/photo1 (42).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (43).jpg" alt="Memory photograph 43" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 43</span>
+            <button class="view-btn" data-image="photos/photo1 (43).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (44).jpg" alt="Memory photograph 44" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 44</span>
+            <button class="view-btn" data-image="photos/photo1 (44).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (45).jpg" alt="Memory photograph 45" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 45</span>
+            <button class="view-btn" data-image="photos/photo1 (45).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (46).jpg" alt="Memory photograph 46" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 46</span>
+            <button class="view-btn" data-image="photos/photo1 (46).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (47).jpg" alt="Memory photograph 47" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 47</span>
+            <button class="view-btn" data-image="photos/photo1 (47).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (48).jpg" alt="Memory photograph 48" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 48</span>
+            <button class="view-btn" data-image="photos/photo1 (48).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (49).jpg" alt="Memory photograph 49" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 49</span>
+            <button class="view-btn" data-image="photos/photo1 (49).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (50).jpg" alt="Memory photograph 50" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 50</span>
+            <button class="view-btn" data-image="photos/photo1 (50).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (51).jpg" alt="Memory photograph 51" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 51</span>
+            <button class="view-btn" data-image="photos/photo1 (51).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (52).jpg" alt="Memory photograph 52" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 52</span>
+            <button class="view-btn" data-image="photos/photo1 (52).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (53).jpg" alt="Memory photograph 53" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 53</span>
+            <button class="view-btn" data-image="photos/photo1 (53).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (54).jpg" alt="Memory photograph 54" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 54</span>
+            <button class="view-btn" data-image="photos/photo1 (54).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (55).jpg" alt="Memory photograph 55" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 55</span>
+            <button class="view-btn" data-image="photos/photo1 (55).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (56).jpg" alt="Memory photograph 56" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 56</span>
+            <button class="view-btn" data-image="photos/photo1 (56).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (57).jpg" alt="Memory photograph 57" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 57</span>
+            <button class="view-btn" data-image="photos/photo1 (57).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (58).jpg" alt="Memory photograph 58" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 58</span>
+            <button class="view-btn" data-image="photos/photo1 (58).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (59).jpg" alt="Memory photograph 59" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 59</span>
+            <button class="view-btn" data-image="photos/photo1 (59).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (60).jpg" alt="Memory photograph 60" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 60</span>
+            <button class="view-btn" data-image="photos/photo1 (60).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (61).jpg" alt="Memory photograph 61" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 61</span>
+            <button class="view-btn" data-image="photos/photo1 (61).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (62).jpg" alt="Memory photograph 62" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 62</span>
+            <button class="view-btn" data-image="photos/photo1 (62).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (63).jpg" alt="Memory photograph 63" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 63</span>
+            <button class="view-btn" data-image="photos/photo1 (63).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (64).jpg" alt="Memory photograph 64" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 64</span>
+            <button class="view-btn" data-image="photos/photo1 (64).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (65).jpg" alt="Memory photograph 65" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 65</span>
+            <button class="view-btn" data-image="photos/photo1 (65).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (66).jpg" alt="Memory photograph 66" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 66</span>
+            <button class="view-btn" data-image="photos/photo1 (66).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (67).jpg" alt="Memory photograph 67" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 67</span>
+            <button class="view-btn" data-image="photos/photo1 (67).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (68).jpg" alt="Memory photograph 68" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 68</span>
+            <button class="view-btn" data-image="photos/photo1 (68).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (69).jpg" alt="Memory photograph 69" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 69</span>
+            <button class="view-btn" data-image="photos/photo1 (69).jpg">View</button>
+        </div>
+    </article>
+
+    <article class="photo-card">
+        <img src="photos/photo1 (70).jpg" alt="Memory photograph 70" loading="lazy">
+        <div class="photo-overlay">
+            <span>MEMORY 70</span>
+            <button class="view-btn" data-image="photos/photo1 (70).jpg">View</button>
+        </div>
+    </article>
+
+</div>
